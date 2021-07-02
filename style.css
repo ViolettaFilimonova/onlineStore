@@ -66,17 +66,57 @@
 .gallery__wrapper {
     display: grid;
     grid-template-columns:  360px 360px 360px;
-    grid-template-rows: 1fr  ;
+    grid-template-rows: 260px 210px  ;
     justify-content: space-between;
     margin-top: 65px;
 }
+.gallery__wrapper-text{
+    position: absolute;
+    top: 43%;
+    left: 29%;
+}
+.gallery__price{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.gallery__for{
+    font-family: Lato;
+    font-style: 700;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+.gallery__wrapper-img{
+    position: relative;
+}
+.gallery__img{
+    position: relative;
+}
+.gallery__wrapper-img:first-child{
+    background: url(./img/women.jpg) no-repeat;
+    
+}
+.gallery__wrapper-img:nth-child(2){
+    background: url(./img/kids.jpg) no-repeat;
+}
+.gallery__wrapper-img:nth-child(3){
+    background: url(./img/men.jpg);
+}
 
 .gallery__img{
+    background: url(./img/trend.jpg) no-repeat;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 3;
-    padding-top: 30px;
+    grid-column-end: 4;
+    margin-top: 30px;
 }
 .gallery__items-title{
     margin-top: 96px;
