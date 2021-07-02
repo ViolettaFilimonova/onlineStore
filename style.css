@@ -190,16 +190,27 @@
     background: url(./img/footerBG.jpg) no-repeat center;
 }
 .footer__subscribe-cards{
-    padding-top: 87px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 136px;
+}
+.footer__subscribe-card:first-child{
+    padding-top: 87px;
+}
+.footer__subscribe-card:last-child{
+    padding-top: 150px;
+}
+.footer__subscribe-img{
+    text-align: center;
+    width: 360px;
 }
 .footer__subscribe-text{
     width: 359px;
+    padding-top: 30px;
 }
 .footer__subscribe-text > p{
     font-family: Lato;
-    font-style: normal;
+    font-style: italic;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
@@ -223,4 +234,64 @@
     line-height: 30px;
     text-align: center;
     color: #222224;
+}
+.footer__subscribe-input{
+    margin-top: 32px;
+    text-align: center;
+}
+.footer__subscribe-input > input{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    background: #E1E1E1;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    width: 256px;
+    height: 49px;
+    padding-left: 22px;
+    display: inline-block;
+}
+.footer__subscribe-input > button{
+    background: #F16D7F;
+    width: 100px;
+    height: 49px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    justify-content: center;
+    margin-left: -4px;
+}
+.footer__right-bg{
+    background: #222224;
+    width: 100%;
+}
+.footer__right-cards{
+    display: grid;
+    grid-template-columns: 332px 148px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.footer__right-card > p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+
 }
