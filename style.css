@@ -107,6 +107,9 @@
     max-width: 360px;  
     background: #F8F8F8;
 }
+.gallery__card-img > img:hover{
+    background-color: rgba(58, 56, 56, 0.86) ;
+}
 .gallery__card-text{
     margin-left: 16px;
 }
@@ -149,6 +152,10 @@
     line-height: 19px;
     color: #F26376;
     background-color: white;
+}
+.gallery__button > button:hover{
+    background: #F16D7F;
+    color: #FFFFFF;
 }
 .footer__about{
     background: #222224;
@@ -274,6 +281,9 @@
     justify-content: center;
     margin-left: -4px;
 }
+.footer__subscribe-input > button:hover{
+    background: #E05C6E;
+}
 .footer__right-bg{
     background: #222224;
     width: 100%;
@@ -294,4 +304,18 @@
     line-height: 19px;
     color: #FBFBFB;
 
+}
+.footer__right-cardBg{
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+}
+.footer__right-img{
+    vertical-align: -webkit-baseline-middle;
+
+}
+.footer__right-cardBg:hover{
+    background: #F16D7F;
 }
