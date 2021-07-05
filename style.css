@@ -7,6 +7,7 @@
     background: #222222;
     max-width: 100%;
 }
+
 .wrapper{
     max-width: 1160px;
     margin: 0 auto;
@@ -26,6 +27,15 @@
 .header__image{
     margin-left: 33px;
 }
+.header__nav-item{
+    position: relative;
+}
+.header__ellips{
+    position: absolute;
+    top: -6px;
+    right: -11px;
+}
+
 .brand{
     background: #F1E4E6;
     max-width: 100%;
@@ -43,9 +53,11 @@
 
 
 .brand__title{
-    max-width: 377px;
-
+    max-width: 409px;
+    border-left: 12px solid  #F16D7F;
+    padding-left: 20px ;
 }
+
 .brand__title > p{
     font-family: lato;
     font-weight: 700;
