@@ -63,6 +63,7 @@
 .brand__decorate{
     color: #F16D7F;
 }
+/*Main Gallery Start*/
 .gallery__wrapper {
     display: grid;
     grid-template-columns:  360px 360px 360px;
@@ -74,6 +75,11 @@
     position: absolute;
     top: 43%;
     left: 29%;
+}
+.gallery__wrapper-textAccesories{
+    position: absolute;
+    top: 65px;
+    left: 490px;
 }
 .gallery__price{
     font-family: Lato;
@@ -96,27 +102,26 @@
 .gallery__wrapper-img{
     position: relative;
 }
-.gallery__img{
-    position: relative;
-}
+
 .gallery__wrapper-img:first-child{
-    background: url(./img/women.jpg) no-repeat;
+    background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(./img/women.jpg) no-repeat;
     
 }
-.gallery__wrapper-img:nth-child(2){
-    background: url(./img/kids.jpg) no-repeat;
-}
 .gallery__wrapper-img:nth-child(3){
-    background: url(./img/men.jpg);
+    background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(./img/kids.jpg) no-repeat;
+}
+.gallery__wrapper-img:nth-child(2){
+    background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(./img/men.jpg);
 }
 
 .gallery__img{
-    background: url(./img/trend.jpg) no-repeat;
+    background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(./img/trend.jpg) no-repeat;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
     margin-top: 30px;
+    position: relative;
 }
 .gallery__items-title{
     margin-top: 96px;
@@ -147,8 +152,26 @@
     max-width: 360px;  
     background: #F8F8F8;
 }
-.gallery__card-img > img:hover{
-    background-color: rgba(58, 56, 56, 0.86) ;
+.gallery__card-img > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.gallery__card-img{
+    position: relative;
+    width: 360px;
+}
+.gallery__card-img::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gallery__card-img:hover::after{
+    background: url(./img/addToCart.svg) 111px 188px no-repeat, linear-gradient(rgba(58, 56, 56, 0.86), rgba(58, 56, 56, 0.86));
 }
 .gallery__card-text{
     margin-left: 16px;
@@ -197,6 +220,9 @@
     background: #F16D7F;
     color: #FFFFFF;
 }
+/*Main Gallery End*/
+
+/*Footer Start*/
 .footer__about{
     background: #222224;
 }
@@ -286,7 +312,7 @@
     margin-top: 32px;
     text-align: center;
 }
-.footer__subscribe-input > input{
+.input{
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -304,7 +330,7 @@
     padding-left: 22px;
     display: inline-block;
 }
-.footer__subscribe-input > button{
+.button{
     background: #F16D7F;
     width: 100px;
     height: 49px;
@@ -319,9 +345,8 @@
     border: none;
     border-radius: 0 25px 25px 0;
     justify-content: center;
-    margin-left: -4px;
 }
-.footer__subscribe-input > button:hover{
+.button:hover{
     background: #E05C6E;
 }
 .footer__right-bg{
@@ -359,3 +384,4 @@
 .footer__right-cardBg:hover{
     background: #F16D7F;
 }
+/*Footer End*/
