@@ -7,12 +7,9 @@
     background: #222222;
     max-width: 100%;
 }
-<<<<<<< HEAD
-=======
 .header__nav-item:last-child{
     align-self: center;
 }
->>>>>>> readme
 
 .wrapper{
     max-width: 1160px;
