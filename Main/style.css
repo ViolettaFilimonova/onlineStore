@@ -373,12 +373,10 @@
     width: 100%;
 }
 .footer__right-cards{
-    display: grid;
-    grid-template-columns: 332px 148px;
+    height: 44px;
+   display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .footer__right-card > p{
     font-family: Lato;
