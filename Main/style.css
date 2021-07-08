@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .header__bg{
     background: #222222;
@@ -219,19 +220,20 @@
 }
 .gallery__button{
     margin-top: 49px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 96px;
 }
-.gallery__button > button{
-    width: 211px;  
-    height: 47px;
+.gallery__btn{
+    display: inline-block;
+    padding: 15px 39px;
     border: 1px solid #FF6A6A;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
     background-color: white;
 }
-.gallery__button > button:hover{
+.gallery__btn:hover{
     background: #F16D7F;
     color: #FFFFFF;
 }
@@ -391,10 +393,10 @@
     background: #FFFFFF;
     display: inline-block;
     text-align: center;
+    padding-top: 9px;
 }
-.footer__right-img{
-    vertical-align: -webkit-baseline-middle;
-
+.footer__right-cardBg:hover .footer__right-svgBg{
+    fill: white;
 }
 .footer__right-cardBg:hover{
     background: #F16D7F;
