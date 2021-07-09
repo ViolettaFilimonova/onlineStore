@@ -347,7 +347,9 @@
 .footer__right-bg{
     background: #222224;
     width: 100%;
+    padding: 25px 0;
 }
+
 .footer__right-cards{
     display: grid;
     grid-template-columns: 332px 148px;

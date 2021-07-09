@@ -371,7 +371,9 @@
 .footer__right-bg{
     background: #222224;
     width: 100%;
+    padding: 25px 0;
 }
+
 .footer__right-cards{
     height: 44px;
    display: flex;
