@@ -149,3 +149,33 @@
 .catalog__wrapp{
     text-align: center;
 }
+.slick-track{
+    display: flex;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 47px;
+    height: 47px;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(./img_product/arrow-left.svg) no-repeat center #c7c7c7;
+    border: none;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(./img_product/arrow-right.svg) no-repeat center #c7c7c7;
+    border: none;
+}
+.slider .slick-arrow.slick-next:hover{
+    fill: #F16D7F;
+}
+.slider .slick-arrow.slick-prev:hover{
+    fill: #F16D7F;
+}
