@@ -151,6 +151,11 @@
 }
 .slick-track{
     display: flex;
+    align-items: flex-start;
+}
+.slider__item{
+    display: flex;
+    justify-content: center;
 }
 .slick-list{
     overflow: hidden;
@@ -168,14 +173,17 @@
     background: url(./img_product/arrow-left.svg) no-repeat center #c7c7c7;
     border: none;
 }
+.slider .slick-arrow.slick-prev:hover{
+    background: url(./img_product/arrow_hover-left.svg) no-repeat center #c7c7c7;
+    border: none;
+}
 .slider .slick-arrow.slick-next{
     right: 0;
     background: url(./img_product/arrow-right.svg) no-repeat center #c7c7c7;
     border: none;
 }
 .slider .slick-arrow.slick-next:hover{
-    fill: #F16D7F;
-}
-.slider .slick-arrow.slick-prev:hover{
-    fill: #F16D7F;
+    right: 0;
+    background: url(./img_product/arrow_hover-right.svg) no-repeat center #c7c7c7;
+    border: none;
 }
