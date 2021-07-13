@@ -255,7 +255,7 @@
 }
 .footer__subscribe-bg{
     width: 100%;
-    background: url(./img/footerBG.jpg) no-repeat center;
+    background: url(./catalog_img/footerBG.jpg) no-repeat center;
 }
 .footer__subscribe-cards{
     display: grid;
