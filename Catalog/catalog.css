@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 /*START HEADER*/
 .header__bg{
@@ -87,48 +88,131 @@
     display: flex;
     padding-top: 51px;
     padding-bottom: 64px;
+    align-items: flex-end;
 }
-.main__filter{
-    display: flex;
+.box{
+    width: 360px;
+    background-color: white;
 }
-.main__filter > p{
+  summary {
+    background-color: white;
+  }
+  .filter{
+      background-color: white;
+  }
+  .filter__designer{
+      padding-bottom: 16px;
+  }
+  .filter__list{
+    display: block;
+    padding: 13px 0 0 16px;
     font-family: Lato;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-}
-.main__filter > button{
-    padding-left: 11px;
-    background-color: white;
-    border: none;
-}
-.main__filter:first-child{
-    padding-left: 15px;
-}
-.main__filter:last-child{
-    padding-left: 304px;
-}
-.main__filter-item{
-    display: flex;
-}
-.main__filter-item > button{
-    background-color: #fff;
-    border: none;
-    padding-left: 10px;
-    padding-right: 28px;
-}
-.main__filter-item > button:nth-child(3){
-    padding-right: 0;
-}
-.main__filter-item > p{
+  }
+  .filter__list > svg{
+      margin-left: 11px;
+  }
+  .filter[open] >  .filter__list {
+    color: #EF5B70;
+  }
+  .filter[open] > .filter__list > svg > path{
+    fill: #EF5B70 ;
+  }
+  .filter__about{
+    display: block;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 10px solid #EF5B70;
+    padding: 8px 0 12px 16px;
+    outline: none;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    margin-top: 18px;
+    margin-left: 17px;
+    width: 327px;
+  }
+  .filter-item[open] > .filter__about{
+    color: #EF5B70;
+  }
+  .filter[open]   {
+    width: 360px;
+    
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);;
+  }
+  .filter__about-list{
+    padding-top: 13px;
+  }
+  .filter__about-item{
+    margin-left: 30px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-top: 11px;
+  }
+  .fiter-content{
+      position: absolute;
+      background: white;
+      width: 360px;
+      border-right:  6px 4px 35px rgba(0, 0, 0, 0.21);;;
+  }
+  .filter__box-input{
+      display: block;
+  }
+  .filter__box-form > summary{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    }
+    .filter__box-trend{
+        margin-left: 32px;
+    }
+    .filter__box-item{
+        margin-left: 28px;
+    }
+.filter__box-input{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    padding-top: 6px;
+    padding-left: 9px;
+}
+.filter__box-input > input{
+    margin-right: 9px;
+}
+.filter__box-content{
+    width: 132px;
+    background: white;
+    padding-bottom: 11px;
+    margin-top: 5px;
+}
+.filter__box-form[open] > .filter__box-content{
+    position: absolute;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter__box{
+    background-color: white;
+}
+.filter__box-contentSize{
+    width: 79px;
+}
+.filter__box-contentPrice{
+    width: 79px;
 }
 /*MAIN CATALOG*/
 .catalog__cards{
