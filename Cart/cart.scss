@@ -3,3 +3,275 @@
     padding: 0;
     box-sizing: border-box;
 }
+@mixin wrapper{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+@mixin fontIntro(){
+    font-family: 'Lato', sans-serif;
+    color: #F16D7F;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+$headerBg:#222222;
+.header{
+    &--bg{
+        background: $headerBg;
+    }
+}
+.wrapper{
+    @include wrapper();
+}
+.nav{
+    display: flex;
+    justify-content: space-between; 
+    padding: 18px 0 18px 0;
+   
+    &__item{
+        position: relative;
+        
+        &:last-child{
+            align-self: center;
+        }
+    }
+    &__img{
+        margin-right: 41px;
+    }
+    &__image{
+        margin-left: 33px;
+    }
+    &__ellips{
+        position: absolute;
+        top: -6px;
+        right: -11px;  
+    }
+}
+/*INTRO START*/
+$IntroBg:#F8F3F4;
+.intro{
+    background: $IntroBg;
+    &__title a{
+        @include fontIntro;
+        text-decoration: none;
+        
+    }
+    &__title{
+        padding: 50px 0;
+    }
+}
+
+/*INTRO END*/
+@mixin shoppingCard($display, $gridCol, $gridRows) {
+    display: $display;
+    grid-template-columns: $gridCol;
+    grid-template-rows: $gridRows;
+}
+@mixin shoppingFontTitle{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+}
+@mixin shoppingFontText($color){
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color;
+}
+@mixin shoppingButtonFont {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.shopping{
+    &--grid{
+        display: grid;
+        grid-template-columns: 652px 508px;
+        grid-template-rows: 924px;
+        margin-top: 96px;
+    }
+    &__card{
+        @include shoppingCard($display:grid, $gridCol: 262px 390px, $gridRows:306px );
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__card:first-child{
+        margin-bottom: 40px;
+    }
+    &__img{
+        background: url(./cart_img/man.jpg) no-repeat;
+    }
+    &__image{
+        background: url(./cart_img/black_mab.jpg) no-repeat;
+    }
+    &__title{
+        margin-bottom: 42px;
+        display: flex;
+        & h3{
+            @include shoppingFontTitle;
+            width: 205px;
+        }
+        & button{
+            align-self: flex-start;
+            border: none;
+            background: none;
+            margin-left: 114px;
+        }
+    }
+    &__text{
+        padding-left: 31px;
+        padding-top: 22px;
+        & p{
+            @include shoppingFontText(#575757);
+            padding-bottom: 6px;
+        }
+        & span{
+            @include shoppingFontText(#EF5B70);
+        }
+    }
+    &__quantity {
+        display: flex;
+        @include shoppingFontText(#575757);
+        & p{
+            padding-bottom: 0;
+        }
+        & p:last-child{
+            border: 1px solid #EAEAEA;
+            padding: 0 16px;
+            margin-left: 24px;
+        }
+    }
+    
+}
+.button{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 89px;
+    margin-bottom: 128px;
+    & button{
+    background:none;
+    border: 1px solid #A4A4A4;
+    padding: 17px 40px;
+    @include shoppingButtonFont;
+  }
+}
+.shopping__form{
+    & h4{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+    & form{
+        margin-left: 148px;
+    }
+    & input{
+        margin-top: 20px;
+        width: 360px;
+        height: 45px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: red;
+    }
+    & input::-webkit-input-placeholder {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color:#222222;
+        padding-left: 18px;
+     }
+   
+        & input:last-child{
+        width: 102px;
+        height: 35px;
+        display:block;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+    }
+    & hr{
+        width: 275px;
+        margin: 0 auto;
+        background: #E2E2E2;
+    }
+}
+.checkout{
+    margin-top: 57px;
+    width: 360px;
+    background: #F5F3F3;
+    margin-left: 148px;
+    &__text{
+        padding-top: 39px;
+    }
+    &__text p:first-child{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        padding-left: 218px;
+    }
+    &__text span:first-child{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+    }
+    &__text p:last-child{
+        padding-left: 153px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        padding-top: 12px;
+        }
+        &__text span:last-child{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F16D7F;
+            padding-left: 23px;
+        }
+         &__button{
+            justify-content: center;
+            display: flex;
+            & button{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                background: #F16D7F;
+                border: none;
+                padding: 15px 41px;
+                margin-top: 17px;
+                margin-bottom: 42px;
+                        }
+         }           
+        }
