@@ -72,6 +72,8 @@
 .registration__item {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 531px 609px;
+      grid-template-columns: 531px 609px;
 }
 
 .registration__name {
@@ -170,6 +172,7 @@
   line-height: 17px;
   color: #FFFFFF;
   padding: 17px 29px;
+  margin-bottom: 96px;
 }
 
 .registration__button button p {
@@ -178,6 +181,52 @@
 
 .registration__button button img {
   padding-left: 20px;
+}
+
+.registration__loyaity h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-top: 64px;
+}
+
+.registration__loyaity p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-top: 22px;
+  width: 633px;
+}
+
+.registration__loyaity ul {
+  padding-top: 21px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style-type: none;
+}
+
+.registration__loyaity ul li {
+  padding-top: 16px;
+}
+
+.registration__loyaity ul li::before {
+  content: " ";
+  background: url(./registration_img/check_mark.svg) no-repeat center left;
+  padding-left: 43px;
+}
+
+.registration__loyaity ul li:first-child {
+  padding-top: 0;
 }
 
 /*END REGISTRATION*/

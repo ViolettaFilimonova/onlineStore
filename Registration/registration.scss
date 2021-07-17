@@ -93,12 +93,18 @@ $IntroBg:#F8F3F4;
     line-height: 13px;
     color: #000000;
 }
+@mixin loyaltyFonts {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
 .registration{
     &__item{
         display: grid;
-    }
-    &__form{
-
+        grid-template-columns: 531px 609px;
     }
     &__name{
         padding-top: 64px;
@@ -154,11 +160,39 @@ $IntroBg:#F8F3F4;
             line-height: 17px;
             color: #FFFFFF;
             padding: 17px 29px;
+            margin-bottom: 96px;
             & p{
                 display: inline-block;
             }
             & img{
                 padding-left: 20px;
+            }
+        }
+    }
+    &__loyaity{
+        & h3{
+            @include loyaltyFonts ;
+            padding-top: 64px;
+        }
+        & p{
+            @include loyaltyFonts ;
+            padding-top: 22px;
+            width: 633px;
+        }
+        & ul{
+            padding-top: 21px;
+            @include loyaltyFonts ;
+            list-style-type: none;
+            & li{
+                padding-top: 16px;
+            }
+            & li::before{
+                content: " ";
+                background: url(./registration_img/check_mark.svg) no-repeat center left;
+                padding-left: 43px;
+            }
+            & li:first-child{
+                padding-top: 0;
             }
         }
     }
