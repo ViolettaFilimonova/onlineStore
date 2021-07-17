@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin wrapper{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+@mixin fontIntro(){
+    font-family: 'Lato', sans-serif;
+    color: #F16D7F;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+$headerBg:#222222;
+.header{
+    &--bg{
+        background: $headerBg;
+    }
+}
+.wrapper{
+    @include wrapper();
+}
+.nav{
+    display: flex;
+    justify-content: space-between; 
+    padding: 18px 0 18px 0;
+   
+    &__item{
+        position: relative;
+        
+        &:last-child{
+            align-self: center;
+        }
+    }
+    &__img{
+        margin-right: 41px;
+    }
+    &__image{
+        margin-left: 33px;
+    }
+    &__ellips{
+        position: absolute;
+        top: -6px;
+        right: -11px;  
+    }
+}
+/*INTRO START*/
+$IntroBg:#F8F3F4;
+.intro{
+    background: $IntroBg;
+    &__title a{
+        @include fontIntro;
+        text-decoration: none;
+        
+    }
+    &__title{
+        padding: 50px 0;
+    }
+}
+
+/*INTRO END*/
+
+
+/*START REGISTRATION*/
+@mixin registrationFormTitle{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+@mixin registrationInput{
+    width: 360px;
+    padding: 13px 0 16px 17px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    display: block;
+}
+@mixin registrationInputRadioText {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+.registration{
+    &__item{
+        display: grid;
+    }
+    &__form{
+
+    }
+    &__name{
+        padding-top: 64px;
+        & p{
+            @include registrationFormTitle;
+        }
+        & input{
+            @include registrationInput;
+            margin-top: 20px;
+        }
+    }
+    &__gender{
+        margin-top: 31px;
+        & span{
+            @include registrationInputRadioText;
+            padding-left: 10px;
+        }
+        & input:nth-child(3){
+            margin-left: 20px;
+            
+        }
+    }
+    &__login{
+        margin-top: 33px;
+        & p{
+            @include registrationFormTitle;
+        }
+        & input{
+            @include registrationInput;
+            margin-top: 20px;
+        }
+        & span{
+            display: block;
+            width: 358px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            padding-top: 15px;
+        }
+    }
+    &__button{
+        margin-top: 39px;
+        & button{
+            background:  #F16D7F;
+            border: none;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 17px 29px;
+            & p{
+                display: inline-block;
+            }
+            & img{
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+
+
+/*END REGISTRATION*/
+
+
+/*START subscribe*/
+.subscribe{
+    &-bg{
+        width: 100%;
+        background: url(../Catalog/catalog_img/footerBG.jpg) no-repeat center;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__card:first-child{
+        padding-top: 87px;
+    }
+    &__card:last-child{
+        padding-top: 150px;
+    }
+    &__img{
+        text-align: center;
+        width: 360px; 
+    }
+    &__text{
+        width: 359px;
+        padding-top: 30px;
+        & p{
+            font-family: Lato;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224;
+        }
+    }
+    &__title{
+        & h3{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }
+        & p{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #222224; 
+        }
+    }
+    &__input{
+        margin-top: 32px;
+        text-align: center;
+        margin-bottom: 146px;
+        & input:first-child{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            color: #222224;
+            opacity: 0.67;
+            background: #E1E1E1;
+            border-radius: 25px 0 0 25px;
+            border: none;
+            width: 256px;
+            height: 49px;
+            padding-left: 22px;
+            display: inline-block;
+        }
+        & input:last-child{
+            background: #F16D7F;
+            width: 100px;
+            height: 49px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 0 25px 25px 0;
+            justify-content: center;
+            &:hover{
+                background: #E05C6E;
+            }
+        }
+    }
+}
+.footer{
+    background: #222224;
+    width: 100%;
+    &__cards{
+        display: grid;
+        grid-template-columns: 332px 148px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    &__card{
+        & p{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FBFBFB;
+        }
+    }
+    &__card-bg{
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        display: inline-block;
+        text-align: center;
+        padding-top: 9px;
+        &:hover{
+            background: #F16D7F;
+        }
+        &:hover .footer__svg-bg{
+            fill: white;
+        }
+    }
+
+}
+
+
+/*END subscribe*/

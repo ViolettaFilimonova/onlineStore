@@ -6,7 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,67 +47,34 @@
                 </div>
             </div>
         </div>
-        <div class="shopping">
-            <div class="wrapper shopping--grid">
-                <div class="shopping__cards">
-                    <div class="shopping__card">
-                        <div class="shopping__img">
+        <div class="registration">
+            <div class="wrapper">
+                <div class="registration__item">
+                    <form action="" class="registration__form">
+                        <div class="registration__name">
+                            <p>Your Name</p>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
                         </div>
-                        <div class="shopping__text">
-                            <div class="shopping__title">
-                                <h3>MANGO PEOPLE T-SHIRT</h3>
-                                <button><img src="./cart_img/close.svg" alt="button close"></button>
-                            </div>
-                            <p>Price: <span>$300</span> </p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl </p>
-                            <div class="shopping__quantity">
-                                <p>Quantity:</p>
-                                <p>2</p>
-                            </div>
+                        <div class="registration__gender">
+                            <input type="radio" name="gender"><span>Male</span>
+                            <input type="radio" name="gender"><span>Female</span>
                         </div>
-                    </div>
-                    <div class="shopping__card">
-                        <div class="shopping__image">
+                        <div class="registration__login">
+                            <p>Login details</p>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <span>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                                lowercase letters</span>
                         </div>
-                        <div class="shopping__text">
-                            <div class="shopping__title">
-                                <h3>MANGO PEOPLE T-SHIRT</h3>
-                                <button><img src="./cart_img/close.svg" alt="button close"></button>
-                            </div>
-                            <p>Price: <span>$300</span> </p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl </p>
-                            <div class="shopping__quantity">
-                                <p>Quantity:</p>
-                                <p>2</p>
-                            </div>
+                        <div class="registration__button">
+                            <button>
+                                <p>JOIN NOW</p>
+                                <img src="./registration_img/arrow-right .svg" alt="arrow right">
+                            </button>
                         </div>
-                    </div>
-                    <div class="button">
-                        <button>CLEAR SHOPPING CART</button>
-                        <button>CONTINUE SHOPPING</button>
-                    </div>
-                </div>
-                <div class="shopping__form">
-                    <form action="">
-                        <h4>SHIPPING ADRESS</h4>
-                        <input type="text" placeholder="Bangladesh">
-                        <input type="text" placeholder="State">
-                        <input type="text" placeholder="Postcode / Zip">
-                        <input type="button" value="GET A QUOTE">
-
                     </form>
-                    <div class="checkout">
-                        <div class="checkout__text">
-                            <p>SUB TOTAL <span>$900</span> </p>
-                            <p>GRAND TOTAL <span>$900</span> </p>
-                        </div>
-                        <hr>
-                        <div class="checkout__button">
-                            <button>PROCEED TO CHECKOUT</button>
-                        </div>
-                    </div>
+                    <div class="registration__loyaity">2</div>
                 </div>
             </div>
         </div>
