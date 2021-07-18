@@ -54,8 +54,13 @@ $IntroBg:#F8F3F4;
     background: $IntroBg;
     &__title a{
         @include fontIntro;
-        text-decoration: none;
-        
+        text-decoration: none; 
+        transition: 1s; 
+    }
+    &__title{
+        a:hover{
+            color: rgb(15, 14, 14);
+        }
     }
     &__title{
         padding: 50px 0;
@@ -161,12 +166,19 @@ $IntroBg:#F8F3F4;
             color: #FFFFFF;
             padding: 17px 29px;
             margin-bottom: 96px;
+            
+            
             & p{
                 display: inline-block;
             }
             & img{
                 padding-left: 20px;
             }
+        }
+        & button:hover{
+            transform: rotateY(360deg);
+            background: #000000;
+            transition: 2s;
         }
     }
     &__loyaity{
@@ -193,6 +205,10 @@ $IntroBg:#F8F3F4;
             }
             & li:first-child{
                 padding-top: 0;
+            }
+            & li:hover{
+                transform: scaleY(1.5);
+                transition: all 0.5ss;
             }
         }
     }
@@ -336,6 +352,13 @@ $IntroBg:#F8F3F4;
     }
 
 }
-
-
+.fbtn{
+    transition: 1s;
+}
+.fbtn:hover {
+    background-color: plum;
+    color: #fff;
+    /* transform: scale(2); */
+    transform: rotateY(360deg); 
+}
 /*END subscribe*/

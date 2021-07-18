@@ -61,6 +61,12 @@
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.intro__title a:hover {
+  color: #0f0e0e;
 }
 
 .intro__title {
@@ -183,6 +189,14 @@
   padding-left: 20px;
 }
 
+.registration__button button:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  background: #000000;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 .registration__loyaity h3 {
   font-family: Lato;
   font-style: normal;
@@ -227,6 +241,13 @@
 
 .registration__loyaity ul li:first-child {
   padding-top: 0;
+}
+
+.registration__loyaity ul li:hover {
+  -webkit-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+  -webkit-transition: all 0.5ss;
+  transition: all 0.5ss;
 }
 
 /*END REGISTRATION*/
@@ -389,6 +410,19 @@
 
 .footer__card-bg:hover .footer__svg-bg {
   fill: white;
+}
+
+.fbtn {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fbtn:hover {
+  background-color: plum;
+  color: #fff;
+  /* transform: scale(2); */
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 /*END subscribe*/
