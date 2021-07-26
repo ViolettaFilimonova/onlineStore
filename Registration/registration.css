@@ -3,16 +3,109 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .header--bg {
   background: #222222;
+  max-width: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.header__nav-item:last-child {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.header__burger {
+  width: 232px;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 79px;
+}
+
+.header__burger-open {
+  display: block;
+}
+
+.header__burger-close {
+  display: none;
+}
+
+.header__burger-close ~ .burger-close {
+  display: none;
+}
+
+.header__burger-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-left: 34px;
+  padding-top: 37px;
+}
+
+.header__list > h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  padding-left: 33px;
+}
+
+.header__list > a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  display: block;
+  padding-left: 54px;
+  padding-top: 12px;
+}
+
+.header__man {
+  margin-top: 24px;
+}
+
+.header__woman, .header__kids {
+  margin-top: 20px;
+}
+
+.header__kids {
+  margin-bottom: 157px;
+}
+
+.burger-open {
+  background: transparent;
+  border: none;
+}
+
+.burger-close {
+  background: transparent;
+  border: none;
+  position: fixed;
+  right: 16px;
+  top: 95px;
+  z-index: 60;
 }
 
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 16px;
 }
 
 .nav {
@@ -51,6 +144,8 @@
 
 /*INTRO START*/
 .intro {
+  max-width: 100%;
+  padding-top: 73px;
   background: #F8F3F4;
 }
 
@@ -78,8 +173,8 @@
 .registration__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 531px 609px;
-      grid-template-columns: 531px 609px;
+  -ms-grid-columns: 51% 49%;
+      grid-template-columns: 51% 49%;
 }
 
 .registration__name {
@@ -197,6 +292,10 @@
   transition: 2s;
 }
 
+.registration__loyaity {
+  padding-left: 22px;
+}
+
 .registration__loyaity h3 {
   font-family: Lato;
   font-style: normal;
@@ -215,7 +314,7 @@
   line-height: 29px;
   color: #000000;
   padding-top: 22px;
-  width: 633px;
+  max-width: 633px;
 }
 
 .registration__loyaity ul {
@@ -253,8 +352,8 @@
 /*END REGISTRATION*/
 /*START subscribe*/
 .subscribe-bg {
-  width: 100%;
   background: url(../Catalog/catalog_img/footerBG.jpg) no-repeat center;
+  background-size: 100% 100%;
 }
 
 .subscribe__cards {
@@ -426,4 +525,104 @@
 }
 
 /*END subscribe*/
+@media (max-width: 1200px) {
+  .registration__loyaity h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__loyaity p {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 354px;
+  }
+  .registration__loyaity ul {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 838px) {
+  .subscribe__cards {
+    display: block;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
+  .subscribe__card:first-child {
+    padding-top: 64px;
+  }
+  .subscribe__card:last-child {
+    padding-top: 48px;
+  }
+  .subscribe__input {
+    padding-bottom: 140px;
+    margin-bottom: 0;
+  }
+  .subscribe__img {
+    width: 100%;
+  }
+  .subscribe__text {
+    margin: 0 auto;
+  }
+  .wrapper {
+    max-width: 728px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro__title {
+    text-align: center;
+  }
+  .registration__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
+  .registration__button button {
+    margin-bottom: 0;
+  }
+  .registration__loyaity {
+    padding-left: 0;
+    padding-bottom: 96px;
+  }
+  .registration__loyaity {
+    padding-top: 40px;
+  }
+  .registration__loyaity h3 {
+    padding-top: 0;
+  }
+  .registration__name {
+    padding-top: 40px;
+  }
+  .subscribe__input input:first-child {
+    width: 246px;
+  }
+  .subscribe__input input:last-child {
+    width: 96px;
+  }
+  .footer__cards {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer__card:first-child {
+    padding-top: 25px;
+  }
+  .footer__card:last-child {
+    margin-top: 43px;
+  }
+}
 /*# sourceMappingURL=registration.css.map */
