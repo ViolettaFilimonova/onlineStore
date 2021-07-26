@@ -8,11 +8,84 @@
 .header__bg{
     background: #222222;
     max-width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
 }
 .header__nav-item:last-child{
     align-self: center;
+    position: relative;
+}
+.burger-open{
+    background: transparent;
+    border: none;
+}
+.header__burger{
+    width: 232px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 79px;
+}
+.header__burger-open{
+    display: block;
+}
+.header__burger-close{
+    display: none;
+}
+.header__burger-close ~ .burger-close{
+    display: none;
 }
 
+.burger-close{
+    background: transparent;
+    border: none;
+    position: fixed;
+    right: 16px;
+    top: 95px;
+    z-index: 60;
+}
+
+.header__burger-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-left: 34px;
+    padding-top: 37px;
+}
+.header__list > h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-left: 33px;
+}
+.header__list > a{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    display: block;
+    padding-left: 54px;
+    padding-top: 12px;
+}
+.header__man{
+    margin-top: 24px;
+}
+.header__woman, .header__kids{
+    margin-top: 20px;
+}
+.header__kids{
+    margin-bottom: 157px;
+}
 .wrapper{
     max-width: 1160px;
     margin: 0 auto;
@@ -29,20 +102,61 @@
 .header__img{
     margin-right: 41px;
 }
-.header__image{
+.nav__image{
     margin-left: 33px;
 }
-.header__nav-item{
-    position: relative;
-}
-.header__ellips{
+
+.nav__ellips{
     position: absolute;
-    top: -6px;
-    right: -11px;
+    top: -7px;
+    right: -10px;
+}
+
+.brand{
+    background: #F1E4E6;
+    max-width: 100%;
+    min-height: 764px;
+}
+.brand__wrapper{
+    display: flex; 
+    min-height: 754px;
+    background-image: url(./img/man.png);
+    background-repeat: no-repeat;
+    background-position: -218px bottom;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.brand__title{
+    max-width: 409px;
+    border-left: 12px solid  #F16D7F;
+    padding-left: 20px ;
+}
+
+.brand__title > p{
+    font-family: lato;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #222222;
+}
+.brand__title > h1{
+    font-family: lato;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+.brand__decorate{
+    color: #F16D7F;
 }
 /*END HEADER*/
 
 /*START NAV*/
+.nav{
+    padding-top: 78px;
+}
 .nav__bg{
     background: #F8F3F4;
 }

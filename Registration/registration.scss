@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 @mixin wrapper{
     max-width: 1160px;
@@ -19,6 +21,85 @@ $headerBg:#222222;
 .header{
     &--bg{
         background: $headerBg;
+        max-width: 100%;
+        position: fixed;
+        width: 100%;
+        z-index: 50;
+    }
+    &__nav-item:last-child{
+        align-self: center;
+        position: relative;
+    }
+    &__burger{
+        width: 232px;
+        background-color: white;
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        top: 79px;
+    }
+    &__burger-open{
+        display: block;
+    }
+    &__burger-close{
+        display: none;
+    }
+    &__burger-close ~ .burger-close{
+        display: none;
+    }
+    &__burger-title{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        padding-left: 34px;
+        padding-top: 37px;
+    }
+    &__list > h3{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        padding-left: 33px;
+    }
+    &__list > a{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        display: block;
+        padding-left: 54px;
+        padding-top: 12px;
+    }
+    &__man{
+        margin-top: 24px;
+    }
+    &__woman, &__kids{
+        margin-top: 20px;
+    }
+    &__kids{
+        margin-bottom: 157px;
+    }
+    
+}
+.burger{
+    &-open{
+        background: transparent;
+        border: none;
+    }
+    &-close{
+        background: transparent;
+        border: none;
+        position: fixed;
+        right: 16px;
+        top: 95px;
+        z-index: 60;
     }
 }
 .wrapper{
@@ -51,6 +132,7 @@ $headerBg:#222222;
 /*INTRO START*/
 $IntroBg:#F8F3F4;
 .intro{
+    padding-top: 73px;
     background: $IntroBg;
     &__title a{
         @include fontIntro;
