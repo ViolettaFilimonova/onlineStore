@@ -8,7 +8,7 @@
 @mixin wrapper{
     max-width: 1160px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 16px;
 }
 @mixin fontIntro(){
     font-family: 'Lato', sans-serif;
@@ -132,6 +132,7 @@ $headerBg:#222222;
 /*INTRO START*/
 $IntroBg:#F8F3F4;
 .intro{
+    max-width: 100%;
     padding-top: 73px;
     background: $IntroBg;
     &__title a{
@@ -191,7 +192,8 @@ $IntroBg:#F8F3F4;
 .registration{
     &__item{
         display: grid;
-        grid-template-columns: 531px 609px;
+        grid-template-columns: 51% 49%;
+        
     }
     &__name{
         padding-top: 64px;
@@ -264,6 +266,7 @@ $IntroBg:#F8F3F4;
         }
     }
     &__loyaity{
+        padding-left: 22px;
         & h3{
             @include loyaltyFonts ;
             padding-top: 64px;
@@ -271,7 +274,7 @@ $IntroBg:#F8F3F4;
         & p{
             @include loyaltyFonts ;
             padding-top: 22px;
-            width: 633px;
+            max-width: 633px;
         }
         & ul{
             padding-top: 21px;
@@ -304,8 +307,8 @@ $IntroBg:#F8F3F4;
 /*START subscribe*/
 .subscribe{
     &-bg{
-        width: 100%;
         background: url(../Catalog/catalog_img/footerBG.jpg) no-repeat center;
+        background-size: 100% 100%;
     }
     &__cards{
         display: grid;
@@ -444,3 +447,102 @@ $IntroBg:#F8F3F4;
     transform: rotateY(360deg); 
 }
 /*END subscribe*/
+@media (max-width: 1200px){
+    .registration{
+        &__loyaity h3{
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__loyaity p{
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 354px;
+        }
+        &__loyaity ul{
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    
+}
+@media (max-width:838px) {
+    .subscribe{
+        &__cards{
+            display: block;
+            grid-template-columns: none;
+            grid-template-rows: none;
+        }
+        &__card:first-child{
+            padding-top: 64px;
+        }
+        &__card:last-child{
+            padding-top: 48px;
+        }
+        &__input{
+            padding-bottom: 140px;
+            margin-bottom: 0;
+        }
+        &__img{
+            width: 100%;
+        }
+        &__text{
+            margin: 0 auto;
+        }
+    }
+    .wrapper{
+        max-width: 728px;
+    }
+}
+@media (max-width:767px){
+    .intro{
+        &__title{
+            text-align: center;
+        }
+    }
+    .registration{
+        &__item{
+            justify-content: center;
+            grid-template-columns: none;
+            grid-template-rows: none;
+        }
+        &__button button{
+            margin-bottom: 0;
+        }
+        &__loyaity{
+            padding-left: 0;
+            padding-bottom: 96px;
+        }
+        &__loyaity{
+            padding-top: 40px;
+        }
+        &__loyaity h3{
+            padding-top: 0;
+        }
+        &__name{
+            padding-top: 40px;
+        }
+        
+    }
+    .subscribe{
+        &__input input:first-child{
+            width: 246px;
+        }
+        &__input input:last-child{
+            width: 96px;
+        }
+    }
+    .footer{
+        &__cards{
+            grid-template-columns: none;
+            grid-template-rows: none;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__card:first-child{
+            padding-top: 25px;
+        }
+        &__card:last-child{
+            margin-top: 43px;
+        }
+    }
+}
