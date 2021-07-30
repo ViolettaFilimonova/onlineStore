@@ -105,7 +105,22 @@
 .nav__image{
     margin-left: 33px;
 }
-
+.nav__ellipc-text{
+    background-image: url(../Main/img/ellipse.svg);
+    width: 19px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    text-align: center;
+    height: 19px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding-top: 3px;
+}
 .nav__ellips{
     position: absolute;
     top: -7px;
@@ -401,14 +416,26 @@ summary{
     background: white;
     height: 49px;
 }
+.main__filter-button > button:hover{
+    color: white;
+    background-color: #F26376;
+    
+}
+.main__filter-button > button:hover .main__filter-butnSvg {
+    fill: white;
+}
 .main__filter-butn p{
     display: inline-block;
     padding-left: 23px;
     padding-right: 57px;
     vertical-align: top;
 }
-.main__filter-butn img{
+.main__filter-butnSvg{
    padding-left: 24px;
+   margin-left: 24px;
+}
+.main__filter-butn > svg{
+    margin-left: 27px;
 }
 .main__filter-button{
     display: flex;
