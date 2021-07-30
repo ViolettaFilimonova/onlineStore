@@ -105,7 +105,22 @@
 .nav__image{
     margin-left: 33px;
 }
-
+.nav__ellipc-text{
+    background-image: url(../Main/img/ellipse.svg);
+    width: 19px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    text-align: center;
+    height: 19px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding-top: 3px;
+}
 .nav__ellips{
     position: absolute;
     top: -7px;

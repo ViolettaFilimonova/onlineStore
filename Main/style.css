@@ -354,6 +354,7 @@
 .footer__subscribe-bg{
     width: 100%;
     background: url(./img/footerBG.jpg) no-repeat center;
+    background-size: 100%;
 }
 .footer__subscribe-cards{
     display: grid;

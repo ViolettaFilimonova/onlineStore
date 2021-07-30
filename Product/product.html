@@ -20,7 +20,7 @@
             <div class="header__nav">
                 <div class="header__nav-item">
                     <a href="../Main/index.html"><img class="header__img" src="../Main/img/logo.png" alt="logo"></a>
-                    <a href="/"><img src="../Main/img/search.svg" alt=""></a>
+                    <a href="#!"><img src="../Main/img/search.svg" alt="search"></a>
                 </div>
                 <div class="header__nav-item ">
                     <div class="header__burger header__burger-close ">
@@ -53,10 +53,13 @@
                     <button class="burger-open"><img class="nav__image" src="../Catalog/catalog_img/menu.svg"
                             alt="menu burger"></button>
                     <button class="burger-close"><img src="../Main/img/close_menu.svg" alt="close menu"></button>
-                    <a href="/"><img class="nav__image" src="../Catalog/catalog_img/account.svg"
-                            alt="personal account"></a>
-                    <a href="/"><img class="nav__image " src="../Catalog/catalog_img/basket.svg" alt="basket">
-                        <img class="nav__ellips" src="../Catalog/catalog_img/ellipse.svg" alt=""></a>
+                    <a href="../Registration/registration.html"><img class="nav__image"
+                            src="../Catalog/catalog_img/account.svg" alt="personal account"></a>
+                    <a href="../Cart/cart.html"><img class="nav__image  basket" src="../Catalog/catalog_img/basket.svg"
+                            alt="basket">
+                        <!--<img class="nav__ellips" src="../Catalog/catalog_img/ellipse.svg" alt="">-->
+                        <span class="nav__ellipc-text">0</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -133,7 +136,7 @@
                 </div>
             </div>
             <div class="main__filter-button">
-                <button>
+                <button class="basket_button">
                     <div class="main__filter-butn">
                         <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="main__filter-butnSvg"
@@ -315,6 +318,7 @@
 <script src="./slick.min.js"></script>
 <script src="./product.js"></script>
 <script src="../Main/script.js"></script>
+<script src="./basket.js"></script>
 
 <body>
 
