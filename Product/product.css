@@ -401,14 +401,23 @@ summary{
     background: white;
     height: 49px;
 }
+.main__filter-button > button:hover{
+    color: white;
+    background-color: #F26376;
+    
+}
+.main__filter-button > button:hover .main__filter-butnSvg {
+    fill: white;
+}
 .main__filter-butn p{
     display: inline-block;
     padding-left: 23px;
     padding-right: 57px;
     vertical-align: top;
 }
-.main__filter-butn img{
+.main__filter-butnSvg{
    padding-left: 24px;
+   margin-left: 24px;
 }
 .main__filter-button{
     display: flex;
