@@ -19,6 +19,9 @@
     background: transparent;
     border: none;
 }
+.burger-open:hover{
+    cursor: pointer;
+}
 .header__burger{
     width: 232px;
     background-color: white;
@@ -45,7 +48,9 @@
     top: 95px;
     z-index: 60;
 }
-
+.burger-close{
+    cursor: pointer;
+}
 .header__burger-title{
     font-family: Lato;
     font-style: normal;
@@ -118,7 +123,7 @@
 }
 .brand__wrapper{
     display: flex; 
-    min-height: 754px;
+    min-height: 763px;
     background-image: url(./img/man.png);
     background-repeat: no-repeat;
     background-position: -218px bottom;
@@ -251,6 +256,9 @@
     position: relative;
     width: 360px;
 }
+.gallery__card-img{
+    cursor: pointer;
+}
 .gallery__card-img::after {
     content: '';
     display: block;
@@ -354,6 +362,7 @@
 .footer__subscribe-bg{
     width: 100%;
     background: url(./img/footerBG.jpg) no-repeat center;
+    background-size: 100%;
 }
 .footer__subscribe-cards{
     display: grid;
@@ -441,6 +450,7 @@
 }
 .button:hover{
     background: #E05C6E;
+    cursor: pointer;
 }
 .footer__right-bg{
     background: #222224;

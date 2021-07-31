@@ -92,6 +92,9 @@ $headerBg:#222222;
     &-open{
         background: transparent;
         border: none;
+        &:hover{
+            cursor: pointer;
+        }
     }
     &-close{
         background: transparent;
@@ -100,6 +103,9 @@ $headerBg:#222222;
         right: 16px;
         top: 95px;
         z-index: 60;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 .wrapper{
@@ -263,6 +269,7 @@ $IntroBg:#F8F3F4;
             transform: rotateY(360deg);
             background: #000000;
             transition: 2s;
+            cursor: pointer;
         }
     }
     &__loyaity{
@@ -396,6 +403,7 @@ $IntroBg:#F8F3F4;
             justify-content: center;
             &:hover{
                 background: #E05C6E;
+                cursor: pointer;
             }
         }
     }

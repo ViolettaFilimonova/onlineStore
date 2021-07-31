@@ -21,6 +21,9 @@
     background: transparent;
     border: none;
 }
+.burger-open:hover{
+    cursor: pointer;
+}
 .header__burger{
     width: 232px;
     background-color: white;
@@ -46,6 +49,9 @@
     right: 16px;
     top: 95px;
     z-index: 60;
+}
+.burger-close:hover{
+    cursor: pointer;
 }
 
 .header__burger-title{
@@ -192,6 +198,9 @@
   .filter__list > svg{
       margin-left: 11px;
   }
+  .filter__list:hover{
+    cursor: pointer;
+  }
   .filter[open] >  .filter__list {
     color: #EF5B70;
   }
@@ -257,6 +266,12 @@
     }
     .filter__box-item{
         margin-left: 28px;
+    }
+    .filter-item:hover{
+        cursor: pointer;
+    }
+    .filter__box:hover{
+        cursor: pointer;
     }
 .filter__box-input{
     font-family: Roboto;
@@ -416,6 +431,7 @@
 .footer__subscribe-bg{
     width: 100%;
     background: url(./catalog_img/footerBG.jpg) no-repeat center;
+    background-size: 100%;
 }
 .footer__subscribe-cards{
     display: grid;
@@ -503,6 +519,7 @@
 }
 .button:hover{
     background: #E05C6E;
+    cursor: pointer;
 }
 .footer__right-bg{
     background: #222224;
