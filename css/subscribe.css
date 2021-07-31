@@ -1,0 +1,115 @@
+.subscribe-bg {
+  background: url(../Catalog/catalog_img/footerBG.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.subscribe__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.subscribe__card:first-child {
+  padding-top: 87px;
+}
+
+.subscribe__card:last-child {
+  padding-top: 150px;
+}
+
+.subscribe__img {
+  text-align: center;
+  width: 360px;
+}
+
+.subscribe__text {
+  width: 359px;
+  padding-top: 30px;
+}
+
+.subscribe__text p {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe__title h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe__title p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe__input {
+  margin-top: 32px;
+  text-align: center;
+  margin-bottom: 146px;
+}
+
+.subscribe__input input:first-child {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #222224;
+  opacity: 0.67;
+  background: #E1E1E1;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  width: 256px;
+  height: 49px;
+  padding-left: 22px;
+  display: inline-block;
+}
+
+.subscribe__input input:last-child {
+  background: #F16D7F;
+  width: 100px;
+  height: 49px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe__input input:last-child:hover {
+  background: #E05C6E;
+  cursor: pointer;
+}
+/*# sourceMappingURL=subscribe.css.map */

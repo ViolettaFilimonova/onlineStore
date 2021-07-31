@@ -1,0 +1,46 @@
+.footer{
+    background: #222224;
+    width: 100%;
+    &__cards{
+        display: grid;
+        grid-template-columns: 332px 148px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    &__card{
+        & p{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FBFBFB;
+        }
+    }
+    &__card-bg{
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        display: inline-block;
+        text-align: center;
+        padding-top: 9px;
+        &:hover{
+            background: #F16D7F;
+        }
+        &:hover .footer__svg-bg{
+            fill: white;
+        }
+    }
+
+}
+.fbtn{
+    transition: 1s;
+}
+.fbtn:hover {
+    background-color: plum;
+    color: #fff;
+    /* transform: scale(2); */
+    transform: rotateY(360deg); 
+}
