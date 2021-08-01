@@ -26,10 +26,6 @@ $headerBg:#222222;
         width: 100%;
         z-index: 50;
     }
-    &__nav-item:last-child{
-        align-self: center;
-        position: relative;
-    }
     &__burger{
         width: 232px;
         background-color: white;
@@ -117,9 +113,21 @@ $headerBg:#222222;
     padding: 18px 0 18px 0;
    
     &__item{
-        position: relative;
         &:last-child{
             align-self: center;
+            position: relative;
+            & span{
+                position: absolute;
+                top: -7px;
+                right: -7px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: #FFFFFF;
+               
+            }
         }
     }
     &__img{
@@ -128,9 +136,9 @@ $headerBg:#222222;
     &__image{
         margin-left: 33px;
     }
-    &__ellips{
-        position: absolute;
-        top: -6px;
-        right: -11px;  
-    }
+}
+.ellips{
+    position: absolute;
+    top: -9px;
+    right: -10px;
 }
