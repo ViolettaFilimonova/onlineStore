@@ -106,7 +106,7 @@
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 27px 0 16px;
 }
 
 .nav {
@@ -150,5 +150,14 @@
   position: absolute;
   top: -9px;
   right: -10px;
+}
+
+@media (max-width: 425px) {
+  .nav__item:last-child a {
+    display: none;
+  }
+  .nav__item:last-child span {
+    display: none;
+  }
 }
 /*# sourceMappingURL=header.css.map */

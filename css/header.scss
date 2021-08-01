@@ -8,7 +8,7 @@
 @mixin wrapper{
     max-width: 1160px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 27px 0 16px;
 }
 @mixin fontIntro(){
     font-family: 'Lato', sans-serif;
@@ -141,4 +141,18 @@ $headerBg:#222222;
     position: absolute;
     top: -9px;
     right: -10px;
+}
+
+
+@media (max-width:425px) {
+    .nav{
+        &__item:last-child{
+            & a{
+                display: none;
+            }
+            & span {
+                display: none;
+            }
+        }
+    }
 }
