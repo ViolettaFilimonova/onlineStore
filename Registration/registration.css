@@ -93,6 +93,10 @@
   border: none;
 }
 
+.burger-open:hover {
+  cursor: pointer;
+}
+
 .burger-close {
   background: transparent;
   border: none;
@@ -100,6 +104,10 @@
   right: 16px;
   top: 95px;
   z-index: 60;
+}
+
+.burger-close:hover {
+  cursor: pointer;
 }
 
 .wrapper {
@@ -290,6 +298,7 @@
   background: #000000;
   -webkit-transition: 2s;
   transition: 2s;
+  cursor: pointer;
 }
 
 .registration__loyaity {
@@ -463,6 +472,7 @@
 
 .subscribe__input input:last-child:hover {
   background: #E05C6E;
+  cursor: pointer;
 }
 
 .footer {

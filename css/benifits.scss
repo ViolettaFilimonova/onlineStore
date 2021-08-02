@@ -1,0 +1,57 @@
+.benefit{
+    background: #222224;
+    &__cards{
+        display: grid;
+        grid-template-columns: 304px 304px 304px;
+        justify-content: space-between; 
+    }
+    &__card{
+        width: 304px;
+        padding-top: 103px;
+        padding-bottom: 104px;
+        text-align: center;
+    }
+    &-text{
+        & h3{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+        }
+        & p{
+            padding-top: 16px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            color: #FBFBFB;
+            width: 304px;
+            text-align: center;
+        }
+    }
+}
+.delivery{
+    padding-top: 28px;
+}
+.sales{
+    padding-top: 19px;
+}
+.quality{
+    padding-top: 25px;
+}
+@media (max-width:1033px) {
+    .benefit{
+        &__cards{
+            grid-template-columns: none;
+            justify-content: center;
+            padding-bottom: 64px;
+        }
+        &__card{
+            padding-top: 48px;
+            padding-bottom: 0;
+        }
+    }
+}

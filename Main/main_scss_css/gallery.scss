@@ -1,0 +1,106 @@
+.gallery{
+    padding-top: 65px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns:  32% 32% 32%;
+        grid-template-rows: 260px 210px  ;
+        justify-content: space-between;
+        margin-top: 65px;
+    }
+    &__text{
+        position: absolute;
+        & p:first-child{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        & p:last-child{
+            font-family: Lato;
+            font-style: 700;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #F16D7F;
+        }
+    }
+    &__text-accesories{
+        position: absolute;
+        & p:first-child{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        & p:last-child{
+            font-family: Lato;
+            font-style: 700;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #F16D7F;
+        }
+    }
+    &__img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img:first-child{
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/women.jpg) center / cover  no-repeat;
+        
+    }
+    &__img:nth-child(3){
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/kids.jpg) center / cover  no-repeat;
+    }
+    &__img:nth-child(2){
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/men.jpg) center / cover no-repeat;
+    }
+    &__img-accesories{
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/trend.jpg) center / cover no-repeat;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width:1007px) {
+    .gallery{
+        padding-top: 0;
+        &__wrapper{
+            margin-top: 18px;
+        }
+    }
+}
+@media (max-width:766px){
+    .gallery{
+        &__wrapper{
+            grid-template-columns: 91%;
+            grid-template-rows: 274px 249px 248px 111px;
+            justify-content: center;
+            grid-gap: 32px;
+        }
+        &__img-accesories{
+            grid-row-start: auto;
+            grid-row-end: auto;
+            grid-column-start: auto;
+            grid-column-end: auto;
+            margin-top: 0;
+        }
+    }
+}
