@@ -95,3 +95,21 @@
         }
     }
 }
+@media (max-width:876px){
+    .subscribe{
+        &__cards{
+            grid-template-columns: none;
+            justify-content: center;
+        }
+        &__card:first-child{
+            padding-top: 64px;
+        }
+        &__card:last-child{
+            padding-top: 48px;
+        }
+        &__input{
+            margin-bottom: 140px;
+            margin-top: 27px;
+        }
+    }
+}

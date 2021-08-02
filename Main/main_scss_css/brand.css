@@ -5,7 +5,6 @@
 .brand {
   background: #F1E4E6;
   max-width: 100%;
-  min-height: 764px;
 }
 
 .brand__title {
@@ -48,5 +47,49 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1007px) {
+  .man {
+    min-height: 581px;
+    background-size: 612px;
+    background-position: -73px bottom;
+  }
+}
+
+@media (max-width: 876px) {
+  .man {
+    min-height: 367px;
+    background-size: 386px;
+    background-position: 21px bottom;
+  }
+  .brand__title {
+    padding-right: 32px;
+    padding-left: 16px;
+    max-width: none;
+  }
+  .brand__title h1 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .brand__title p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 725px) {
+  .man {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=brand.css.map */

@@ -100,3 +100,31 @@
         }
     }
 }
+
+@media (max-width: 1168px){
+.cart{
+    &__cards{
+        grid-template-columns: 360px 360px;
+        justify-content: space-around;
+        }
+    }
+}
+@media (max-width:808px){
+    .cart{
+        &__cards{
+            justify-content: space-between;
+            }
+        } 
+}
+@media (max-width:766px){
+    .cart{
+        &__cards{
+            grid-template-columns: 360px;
+            justify-content: center;
+            margin-top: 50px;
+            }
+            &__card{
+                margin-top: 16px;
+            }
+    }
+}

@@ -122,4 +122,35 @@
   background: #F16D7F;
   color: #FFFFFF;
 }
+
+@media (max-width: 1168px) {
+  .cart__cards {
+    -ms-grid-columns: 360px 360px;
+        grid-template-columns: 360px 360px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 808px) {
+  .cart__cards {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 766px) {
+  .cart__cards {
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .cart__card {
+    margin-top: 16px;
+  }
+}
 /*# sourceMappingURL=main_cart.css.map */

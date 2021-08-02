@@ -113,4 +113,24 @@
   background: #E05C6E;
   cursor: pointer;
 }
+
+@media (max-width: 876px) {
+  .subscribe__cards {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subscribe__card:first-child {
+    padding-top: 64px;
+  }
+  .subscribe__card:last-child {
+    padding-top: 48px;
+  }
+  .subscribe__input {
+    margin-bottom: 140px;
+    margin-top: 27px;
+  }
+}
 /*# sourceMappingURL=subscribe.css.map */

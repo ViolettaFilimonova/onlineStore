@@ -5,8 +5,8 @@
 .gallery__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 360px 360px 360px;
-      grid-template-columns: 360px 360px 360px;
+  -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: 32% 32% 32%;
   -ms-grid-rows: 260px 210px;
       grid-template-rows: 260px 210px;
   -webkit-box-pack: justify;
@@ -17,8 +17,6 @@
 
 .gallery__text {
   position: absolute;
-  top: 43%;
-  left: 29%;
 }
 
 .gallery__text p:first-child {
@@ -43,8 +41,6 @@
 
 .gallery__text-accesories {
   position: absolute;
-  top: 65px;
-  left: 490px;
 }
 
 .gallery__text-accesories p:first-child {
@@ -69,26 +65,35 @@
 
 .gallery__img {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gallery__img:first-child {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/women.jpg) no-repeat;
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/women.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/women.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/women.jpg) center/cover no-repeat;
 }
 
 .gallery__img:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/kids.jpg) no-repeat;
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/kids.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/kids.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/kids.jpg) center/cover no-repeat;
 }
 
 .gallery__img:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/men.jpg);
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/men.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/men.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/men.jpg) center/cover no-repeat;
 }
 
 .gallery__img-accesories {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/trend.jpg) no-repeat;
-  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/trend.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/trend.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/trend.jpg) center/cover no-repeat;
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
@@ -97,5 +102,45 @@
   grid-column-end: 4;
   margin-top: 30px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1007px) {
+  .gallery {
+    padding-top: 0;
+  }
+  .gallery__wrapper {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 766px) {
+  .gallery__wrapper {
+    -ms-grid-columns: 91%;
+        grid-template-columns: 91%;
+    -ms-grid-rows: 274px 249px 248px 111px;
+        grid-template-rows: 274px 249px 248px 111px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 32px;
+  }
+  .gallery__img-accesories {
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    grid-row-end: auto;
+    -ms-grid-column: auto;
+        grid-column-start: auto;
+    grid-column-end: auto;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=gallery.css.map */
