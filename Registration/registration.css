@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
@@ -14,14 +13,10 @@
   width: 100%;
   z-index: 50;
 }
-
 .header__nav-item:last-child {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   position: relative;
 }
-
 .header__burger {
   width: 232px;
   background-color: white;
@@ -30,19 +25,15 @@
   right: 0;
   top: 79px;
 }
-
 .header__burger-open {
   display: block;
 }
-
 .header__burger-close {
   display: none;
 }
-
 .header__burger-close ~ .burger-close {
   display: none;
 }
-
 .header__burger-title {
   font-family: Lato;
   font-style: normal;
@@ -53,7 +44,6 @@
   padding-left: 34px;
   padding-top: 37px;
 }
-
 .header__list > h3 {
   font-family: Lato;
   font-style: normal;
@@ -63,7 +53,6 @@
   color: #F16D7F;
   padding-left: 33px;
 }
-
 .header__list > a {
   font-family: Lato;
   font-style: normal;
@@ -75,15 +64,12 @@
   padding-left: 54px;
   padding-top: 12px;
 }
-
 .header__man {
   margin-top: 24px;
 }
-
 .header__woman, .header__kids {
   margin-top: 20px;
 }
-
 .header__kids {
   margin-bottom: 157px;
 }
@@ -92,11 +78,9 @@
   background: transparent;
   border: none;
 }
-
 .burger-open:hover {
   cursor: pointer;
 }
-
 .burger-close {
   background: transparent;
   border: none;
@@ -105,7 +89,6 @@
   top: 95px;
   z-index: 60;
 }
-
 .burger-close:hover {
   cursor: pointer;
 }
@@ -117,33 +100,22 @@
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 18px 0 18px 0;
 }
-
 .nav__item {
   position: relative;
 }
-
 .nav__item:last-child {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .nav__img {
   margin-right: 41px;
 }
-
 .nav__image {
   margin-left: 33px;
 }
-
 .nav__ellips {
   position: absolute;
   top: -6px;
@@ -156,22 +128,18 @@
   padding-top: 73px;
   background: #F8F3F4;
 }
-
 .intro__title a {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #F16D7F;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .intro__title a:hover {
   color: #0f0e0e;
 }
-
 .intro__title {
   padding: 50px 0;
 }
@@ -179,16 +147,12 @@
 /*INTRO END*/
 /*START REGISTRATION*/
 .registration__item {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 51% 49%;
-      grid-template-columns: 51% 49%;
+  grid-template-columns: 51% 49%;
 }
-
 .registration__name {
   padding-top: 64px;
 }
-
 .registration__name p {
   font-family: Lato;
   font-style: normal;
@@ -197,7 +161,6 @@
   line-height: 19px;
   color: #222222;
 }
-
 .registration__name input {
   width: 360px;
   padding: 13px 0 16px 17px;
@@ -210,11 +173,9 @@
   display: block;
   margin-top: 20px;
 }
-
 .registration__gender {
   margin-top: 31px;
 }
-
 .registration__gender span {
   font-family: Lato;
   font-style: normal;
@@ -224,15 +185,12 @@
   color: #000000;
   padding-left: 10px;
 }
-
 .registration__gender input:nth-child(3) {
   margin-left: 20px;
 }
-
 .registration__login {
   margin-top: 33px;
 }
-
 .registration__login p {
   font-family: Lato;
   font-style: normal;
@@ -241,7 +199,6 @@
   line-height: 19px;
   color: #222222;
 }
-
 .registration__login input {
   width: 360px;
   padding: 13px 0 16px 17px;
@@ -254,7 +211,6 @@
   display: block;
   margin-top: 20px;
 }
-
 .registration__login span {
   display: block;
   width: 358px;
@@ -266,11 +222,9 @@
   color: #B1B1B1;
   padding-top: 15px;
 }
-
 .registration__button {
   margin-top: 39px;
 }
-
 .registration__button button {
   background: #F16D7F;
   border: none;
@@ -283,28 +237,21 @@
   padding: 17px 29px;
   margin-bottom: 96px;
 }
-
 .registration__button button p {
   display: inline-block;
 }
-
 .registration__button button img {
   padding-left: 20px;
 }
-
 .registration__button button:hover {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
+  transform: rotateY(360deg);
   background: #000000;
-  -webkit-transition: 2s;
   transition: 2s;
   cursor: pointer;
 }
-
 .registration__loyaity {
   padding-left: 22px;
 }
-
 .registration__loyaity h3 {
   font-family: Lato;
   font-style: normal;
@@ -314,7 +261,6 @@
   color: #000000;
   padding-top: 64px;
 }
-
 .registration__loyaity p {
   font-family: Lato;
   font-style: normal;
@@ -325,7 +271,6 @@
   padding-top: 22px;
   max-width: 633px;
 }
-
 .registration__loyaity ul {
   padding-top: 21px;
   font-family: Lato;
@@ -336,25 +281,19 @@
   color: #000000;
   list-style-type: none;
 }
-
 .registration__loyaity ul li {
   padding-top: 16px;
 }
-
 .registration__loyaity ul li::before {
   content: " ";
   background: url(./registration_img/check_mark.svg) no-repeat center left;
   padding-left: 43px;
 }
-
 .registration__loyaity ul li:first-child {
   padding-top: 0;
 }
-
 .registration__loyaity ul li:hover {
-  -webkit-transform: scaleY(1.5);
-          transform: scaleY(1.5);
-  -webkit-transition: all 0.5ss;
+  transform: scaleY(1.5);
   transition: all 0.5ss;
 }
 
@@ -364,32 +303,24 @@
   background: url(../Catalog/catalog_img/footerBG.jpg) no-repeat center;
   background-size: 100% 100%;
 }
-
 .subscribe__cards {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-
 .subscribe__card:first-child {
   padding-top: 87px;
 }
-
 .subscribe__card:last-child {
   padding-top: 150px;
 }
-
 .subscribe__img {
   text-align: center;
   width: 360px;
 }
-
 .subscribe__text {
   width: 359px;
   padding-top: 30px;
 }
-
 .subscribe__text p {
   font-family: Lato;
   font-style: italic;
@@ -399,7 +330,6 @@
   text-align: center;
   color: #222224;
 }
-
 .subscribe__title h3 {
   font-family: Lato;
   font-style: normal;
@@ -409,7 +339,6 @@
   text-align: center;
   color: #222224;
 }
-
 .subscribe__title p {
   font-family: Lato;
   font-style: normal;
@@ -419,25 +348,19 @@
   text-align: center;
   color: #222224;
 }
-
 .subscribe__input {
   margin-top: 32px;
   text-align: center;
   margin-bottom: 146px;
 }
-
 .subscribe__input input:first-child {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #222224;
   opacity: 0.67;
   background: #E1E1E1;
@@ -448,7 +371,6 @@
   padding-left: 22px;
   display: inline-block;
 }
-
 .subscribe__input input:last-child {
   background: #F16D7F;
   width: 100px;
@@ -458,18 +380,13 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #FFFFFF;
   border: none;
   border-radius: 0 25px 25px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .subscribe__input input:last-child:hover {
   background: #E05C6E;
   cursor: pointer;
@@ -479,22 +396,14 @@
   background: #222224;
   width: 100%;
 }
-
 .footer__cards {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 332px 148px;
-      grid-template-columns: 332px 148px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: 332px 148px;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .footer__card p {
   font-family: Lato;
   font-style: normal;
@@ -503,7 +412,6 @@
   line-height: 19px;
   color: #FBFBFB;
 }
-
 .footer__card-bg {
   width: 32px;
   height: 32px;
@@ -512,17 +420,14 @@
   text-align: center;
   padding-top: 9px;
 }
-
 .footer__card-bg:hover {
   background: #F16D7F;
 }
-
 .footer__card-bg:hover .footer__svg-bg {
   fill: white;
 }
 
 .fbtn {
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -530,8 +435,7 @@
   background-color: plum;
   color: #fff;
   /* transform: scale(2); */
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 /*END subscribe*/
@@ -550,14 +454,11 @@
     line-height: 19px;
   }
 }
-
 @media (max-width: 838px) {
   .subscribe__cards {
     display: block;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    -ms-grid-rows: none;
-        grid-template-rows: none;
+    grid-template-columns: none;
+    grid-template-rows: none;
   }
   .subscribe__card:first-child {
     padding-top: 64px;
@@ -575,23 +476,20 @@
   .subscribe__text {
     margin: 0 auto;
   }
+
   .wrapper {
     max-width: 728px;
   }
 }
-
 @media (max-width: 767px) {
   .intro__title {
     text-align: center;
   }
+
   .registration__item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    -ms-grid-rows: none;
-        grid-template-rows: none;
+    justify-content: center;
+    grid-template-columns: none;
+    grid-template-rows: none;
   }
   .registration__button button {
     margin-bottom: 0;
@@ -609,24 +507,19 @@
   .registration__name {
     padding-top: 40px;
   }
+
   .subscribe__input input:first-child {
     width: 246px;
   }
   .subscribe__input input:last-child {
     width: 96px;
   }
+
   .footer__cards {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    -ms-grid-rows: none;
-        grid-template-rows: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    grid-template-columns: none;
+    grid-template-rows: none;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .footer__card:first-child {
     padding-top: 25px;
@@ -634,5 +527,4 @@
   .footer__card:last-child {
     margin-top: 43px;
   }
-}
-/*# sourceMappingURL=registration.css.map */
+}/*# sourceMappingURL=registration.css.map */

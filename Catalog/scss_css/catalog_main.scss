@@ -4,16 +4,16 @@
         align-items: flex-end;
     }
 }
-.wrapper{
-    @include wrapper;
-}
 .filter{
     padding-top: 13px;
     &[open]{
         width: 360px;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        position: absolute;
+        top: 278px;
+        z-index: 3;
     }
-    &[open] > .filter__list{
+    &[open] > .filter__list > h3{
         color: #EF5B70;
     }
     &[open] > .filter__list > svg > path{
@@ -22,9 +22,6 @@
     &__box{
         &:hover{
             cursor: pointer;
-        }
-        &:first-child{
-            width: 260px;
         }
         color: white;
         padding-top: 51px;
@@ -58,10 +55,13 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: #6F6E6E;
+                & img{
+                    padding-left: 9px;
+                }
             }
         }
         &-trend{
-            margin-left: 132px;
+            margin-left: 20%;
         }
         &-item{
             margin-left: 28px;
@@ -88,14 +88,16 @@
         }
     }
     &__list{
-        display: block;
-        padding: 0 0 0 16px;
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
+        & h3{
+            display: inline-block;
+            padding: 13px 0 0 16px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
     }
     &__list {
         & svg{
@@ -148,9 +150,7 @@
 .catalog{
     &__cards{
         display: grid;
-        grid-template-columns: 360px 360px 360px;
-        grid-template-rows: 611px 611px 611px;
-        justify-content: space-between;
+        grid-template-columns: repeat(auto-fill, 360px);
         padding-bottom: 48px;
         grid-gap: 30px;
         
@@ -172,6 +172,7 @@
     }
     &__title{
         padding-left: 16px;
+        margin-bottom: 20px;
         & h3{
             font-family: Lato;
             font-style: normal;
@@ -197,7 +198,7 @@
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
-            color: blue;
+            color: #F16D7F;
             padding-top: 18px;
             display: inline-block;
         }
@@ -236,10 +237,65 @@
 @media (max-width:1200px) {
     .catalog{
         &__cards{
-            grid-template-columns: 360px 360px;
-            grid-template-rows: 611px 611px 611px;
             justify-content: space-around;
 
         }
     }
 }
+@media (max-width:743px){
+    .filter{
+        &__box{
+            &-form{
+                summary{
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:503px){
+    .filter{
+        &__list{
+            & h3{
+                display: none;
+            }
+            & svg{
+                width: 37px;
+                height: 25px;
+            }
+        }
+        &__box{
+            &-trend{
+                margin-left: 8%;
+            }
+        }
+    }
+}
+@media (max-width:495px) {
+    .arrivals{
+        &__wrap{
+            flex-direction: column;
+            text-align: center;
+      }
+        &__title{
+            &:first-child{
+                margin: 24px 0 32px 0;
+            }
+            &:last-child{
+                margin: 0 0 46px 0;
+            }
+      }
+    }
+    .filter{
+        &[open]{
+            width: 348px;
+        }
+        &__content{
+            width: 348px;
+        }
+        &__about{
+            width: 307px;
+        }
+    }
+  }
