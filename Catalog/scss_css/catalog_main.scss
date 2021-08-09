@@ -61,7 +61,7 @@
             }
         }
         &-trend{
-            margin-left: 20%;
+            margin-left: 26%;
         }
         &-item{
             margin-left: 28px;
@@ -251,6 +251,9 @@
                     line-height: 14px;
                 }
             }
+            &-trend{
+                margin-left: 20%;
+            }
         }
     }
 }
@@ -263,6 +266,7 @@
             & svg{
                 width: 37px;
                 height: 25px;
+                margin-left: 0;
             }
         }
         &__box{

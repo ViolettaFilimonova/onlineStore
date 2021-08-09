@@ -60,7 +60,7 @@
   padding-left: 9px;
 }
 .filter__box-trend {
-  margin-left: 20%;
+  margin-left: 26%;
 }
 .filter__box-item {
   margin-left: 28px;
@@ -236,6 +236,9 @@
     font-size: 12px;
     line-height: 14px;
   }
+  .filter__box-trend {
+    margin-left: 20%;
+  }
 }
 @media (max-width: 503px) {
   .filter__list h3 {
@@ -244,6 +247,7 @@
   .filter__list svg {
     width: 37px;
     height: 25px;
+    margin-left: 0;
   }
   .filter__box-trend {
     margin-left: 8%;
