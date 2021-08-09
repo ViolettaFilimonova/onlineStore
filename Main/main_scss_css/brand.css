@@ -74,4 +74,8 @@
     justify-content: center;
     align-items: center;
   }
+
+  .brand__title {
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=brand.css.map */

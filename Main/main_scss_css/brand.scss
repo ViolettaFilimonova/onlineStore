@@ -74,4 +74,9 @@
         justify-content: center;
         align-items: center;
     }
+    .brand{
+        &__title{
+            padding-right: 0;
+        }
+    }
 }
