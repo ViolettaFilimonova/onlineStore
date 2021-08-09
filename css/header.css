@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
@@ -14,13 +13,11 @@
   width: 100%;
   z-index: 50;
 }
-
 .header__wrapper {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 27px 0 16px;
 }
-
 .header__burger {
   width: 232px;
   background-color: white;
@@ -29,19 +26,15 @@
   right: 0;
   top: 79px;
 }
-
 .header__burger-open {
   display: block;
 }
-
 .header__burger-close {
   display: none;
 }
-
 .header__burger-close ~ .burger-close {
   display: none;
 }
-
 .header__burger-title {
   font-family: Lato;
   font-style: normal;
@@ -52,7 +45,6 @@
   padding-left: 34px;
   padding-top: 37px;
 }
-
 .header__list > h3 {
   font-family: Lato;
   font-style: normal;
@@ -62,7 +54,6 @@
   color: #F16D7F;
   padding-left: 33px;
 }
-
 .header__list > a {
   font-family: Lato;
   font-style: normal;
@@ -74,15 +65,12 @@
   padding-left: 54px;
   padding-top: 12px;
 }
-
 .header__man {
   margin-top: 24px;
 }
-
 .header__woman, .header__kids {
   margin-top: 20px;
 }
-
 .header__kids {
   margin-bottom: 157px;
 }
@@ -91,11 +79,9 @@
   background: transparent;
   border: none;
 }
-
 .burger-open:hover {
   cursor: pointer;
 }
-
 .burger-close {
   background: transparent;
   border: none;
@@ -104,34 +90,25 @@
   top: 95px;
   z-index: 60;
 }
-
 .burger-close:hover {
   cursor: pointer;
 }
 
 .wrapper {
-  max-width: 1160px;
+  max-width: 1190px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 18px 0 18px 0;
 }
-
 .nav__item:last-child {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   position: relative;
 }
-
 .nav__item:last-child span {
   position: absolute;
   top: -7px;
@@ -143,11 +120,9 @@
   line-height: 14px;
   color: #FFFFFF;
 }
-
 .nav__img {
   margin-right: 41px;
 }
-
 .nav__image {
   margin-left: 33px;
 }
@@ -163,7 +138,6 @@
     max-width: 728px;
   }
 }
-
 @media (max-width: 425px) {
   .nav__item:last-child a {
     display: none;
@@ -171,5 +145,4 @@
   .nav__item:last-child span {
     display: none;
   }
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

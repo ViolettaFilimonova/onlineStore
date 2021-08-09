@@ -56,17 +56,17 @@
         align-items: center;
     }
     &__img:first-child{
-        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/women.jpg) center / cover  no-repeat;
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(/img/women.jpg) center / cover  no-repeat;
         
     }
     &__img:nth-child(3){
-        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/kids.jpg) center / cover  no-repeat;
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(/img/kids.jpg) center / cover  no-repeat;
     }
     &__img:nth-child(2){
-        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/men.jpg) center / cover no-repeat;
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(/img/men.jpg) center / cover no-repeat;
     }
     &__img-accesories{
-        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/trend.jpg) center / cover no-repeat;
+        background: linear-gradient( rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(/img/trend.jpg) center / cover no-repeat;
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;

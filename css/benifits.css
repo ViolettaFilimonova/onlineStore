@@ -1,24 +1,17 @@
 .benefit {
   background: #222224;
 }
-
 .benefit__cards {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 304px 304px 304px;
-      grid-template-columns: 304px 304px 304px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  grid-template-columns: 304px 304px 304px;
+  justify-content: space-between;
 }
-
 .benefit__card {
   width: 304px;
   padding-top: 103px;
   padding-bottom: 104px;
   text-align: center;
 }
-
 .benefit-text h3 {
   font-family: Lato;
   font-style: normal;
@@ -27,7 +20,6 @@
   line-height: 24px;
   color: #FBFBFB;
 }
-
 .benefit-text p {
   padding-top: 16px;
   font-family: Lato;
@@ -54,16 +46,12 @@
 
 @media (max-width: 1033px) {
   .benefit__cards {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    grid-template-columns: none;
+    justify-content: center;
     padding-bottom: 64px;
   }
   .benefit__card {
     padding-top: 48px;
     padding-bottom: 0;
   }
-}
-/*# sourceMappingURL=benifits.css.map */
+}/*# sourceMappingURL=benifits.css.map */
