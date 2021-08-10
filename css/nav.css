@@ -35,4 +35,17 @@
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
+}
+
+@media (max-width: 495px) {
+  .arrivals__wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .arrivals__title:first-child {
+    margin: 24px 0 32px 0;
+  }
+  .arrivals__title:last-child {
+    margin: 0 0 46px 0;
+  }
 }/*# sourceMappingURL=nav.css.map */

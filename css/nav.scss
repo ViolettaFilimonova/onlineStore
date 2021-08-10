@@ -40,3 +40,19 @@
         }
     }
 }
+@media (max-width:495px) {
+    .arrivals{
+        &__wrap{
+            flex-direction: column;
+            text-align: center;
+      }
+        &__title{
+            &:first-child{
+                margin: 24px 0 32px 0;
+            }
+            &:last-child{
+                margin: 0 0 46px 0;
+            }
+      }
+    }
+}
